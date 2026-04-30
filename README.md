@@ -12,6 +12,7 @@ Voir trakt.png.  Entrez vstream2trakt dans 'name', utilisez n'importe quoi comme
 
 # Tes identifiants Trakt (OAuth)
 CLIENT_ID = "ton_client_id_ici"
+
 CLIENT_SECRET = "ton_client_secret_ici"
 
 Changez egalement le chemin ou trouver la base de donnees de vStream.  Voir vstream.webp. Ici c'est deja configure pour une machine sous Fedora linux.  Ce chemin sera different pour windows.
