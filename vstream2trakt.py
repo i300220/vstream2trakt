@@ -59,7 +59,7 @@ def get_movies_from_vstream():
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
 
-    # vStream stocke souvent les films dans la table "movie" ou "medias"
+    # vStream stocke souvent les films dans la table "movie"
     # On cherche les colonnes tmdb_id et imdb_id
     query = """
         SELECT DISTINCT 
