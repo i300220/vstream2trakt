@@ -8,7 +8,7 @@ Alors ce script va pallier a cette difference en synchronisant les films vus a l
 Je l'ai teste sur une machine Fedora 42 et tout ce que j'ai eu a installer fut 'sudo dnf install python3-tqdm'.  Quoi qu'il en soit, votre machine doit avoir python installe et necessite requests, sqlite3 et tqdm' pour fonctionner.  Si ces paquets sont disponibles dans votre distribution linux, privilegiez-les.  Sinon, installez-les avec pip (sur Fedora par exemple:  python3 -m pip install --user requests sqlite3 tqdm).  Ce script va egalement fonctionner sous windows, en autant que python soit deja installe.
 
 Maintenant il va vous falloir creer une application pour utiliser l'api de trakt en vous rendant sur https://trakt.tv/oauth/applications/new
-Voir trakt.png.  Entrez vstream2trakt dans 'name', utilisez n'importe quoi comme image, entrez une courte description, entrea 'urn:ietf:wg:oauth:2.0:oob' comme redirect url, clizuez pour autosiser les permission checkin et scrobble, ensuite cliquez sur 'save app'.  Si tout va bien, votre app est prete et vous otiendrez vos identifiants.  Il va vous falloir editer le fichier vstream2trakt.py et entrer ces donnees avant de l'executer.  C'est la configuration requise avant de l'utiliser. Remplacez le texte dans le fichier vstream2trakt.py par ce que trakt vous a donne:
+Voir trakt.png.  Entrez vstream2trakt dans 'name', utilisez n'importe quoi comme image, entrez une courte description, entrez 'urn:ietf:wg:oauth:2.0:oob' comme redirect url, cliquez pour autoriser les permission checkin et scrobble, ensuite cliquez sur 'save app'.  Si tout va bien, votre app est prete et vous otiendrez vos identifiants.  Il va vous falloir editer le fichier vstream2trakt.py et entrer ces donnees avant de l'executer.  C'est la configuration requise avant de l'utiliser. Remplacez le texte dans le fichier vstream2trakt.py par ce que trakt vous a donne:
 
 # Tes identifiants Trakt (OAuth)
 CLIENT_ID = "ton_client_id_ici"
@@ -30,4 +30,4 @@ Documentation:
 La documentation pour l'API de trakt se trouve a https://docs.trakt.tv/docs/create-an-app si jamais vous en avez besoin.
 
 Utilisation:
-Une fois proprement configure - il y a une section 'configuration' au tout debut de vstream2trakt.py - executez le script de la facon suivante: python ~/bin/vstream2trakt.py (en supposant que le script a ete place dans ~/bin).  Utilisez le bon chemin!  Voir execution.webp.
+Une fois proprement configure - il y a une section 'configuration' au tout debut de vstream2trakt.py - executez le script de la facon suivante: python ~/bin/vstream2trakt.py (en supposant que le script a ete place dans ~/bin) et suivez les instructions donnees par trakt.  Utilisez le bon chemin!  Voir execution.webp.
