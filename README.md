@@ -14,7 +14,7 @@ Voir trakt.png.  Entrez vstream2trakt dans 'name', utilisez n'importe quoi comme
 CLIENT_ID = "ton_client_id_ici"
 CLIENT_SECRET = "ton_client_secret_ici"
 
-Changez egalement le chemin ou trouver la base de donnees de vStream.  Ici c'est deja configure pour une machine sous Fedora linux.  Ce chemin sera different pour windows.
+Changez egalement le chemin ou trouver la base de donnees de vStream.  Voir vstream.webp. Ici c'est deja configure pour une machine sous Fedora linux.  Ce chemin sera different pour windows.
 
 # Chemin vers ta base de données vStream
 DB_PATH = r"/home/shizuma/.kodi/userdata/addon_data/plugin.video.vstream/video_cache.db"  # ← À MODIFIER
@@ -30,4 +30,4 @@ Documentation:
 La documentation pour l'API de trakt se trouve a https://docs.trakt.tv/docs/create-an-app si jamais vous en avez besoin.
 
 Utilisation:
-Une fois proprement configure - il y a une section 'configuration' au tout debut de vstream2trakt.py - executez le script de la facon suivante: python ~/bin/vstream2trakt.py (en supposant que le script a ete place dans ~/bin).  Utilisez le bon chemin!
+Une fois proprement configure - il y a une section 'configuration' au tout debut de vstream2trakt.py - executez le script de la facon suivante: python ~/bin/vstream2trakt.py (en supposant que le script a ete place dans ~/bin).  Utilisez le bon chemin!  Voir execution.webp.
