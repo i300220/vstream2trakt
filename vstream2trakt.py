@@ -68,8 +68,8 @@ def get_movies_from_vstream():
             COALESCE(imdb_id, '') as imdb_id,
             year
         FROM movie 
-        WHERE (tmdb_id IS NOT NULL OR imdb_id IS NOT NULL)
-        AND (tmdb_id != '' OR imdb_id != '')
+        WHERE imdb_id IS NOT NULL 
+        AND trim(imdb_id) != ''
     """
 
     cursor.execute(query)
