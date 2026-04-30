@@ -69,7 +69,7 @@ def get_movies_from_vstream():
             year
         FROM movie 
         WHERE (tmdb_id IS NOT NULL OR imdb_id IS NOT NULL)
-        AND tmdb_id != '' OR imdb_id != ''
+        AND (tmdb_id != '' OR imdb_id != '')
     """
 
     cursor.execute(query)
